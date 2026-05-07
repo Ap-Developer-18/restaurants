@@ -101,7 +101,7 @@ export function Weddings() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: i * 0.1 }}
-              className="glass-card group relative overflow-hidden rounded-lg lg:rounded-3xl p-8 hover:border-gold/40 transition-all duration-500"
+              className="glass-card group relative overflow-hidden rounded-lg lg:rounded-3xl p-6 xl:p-8 hover:border-gold/40 transition-all duration-500"
             >
               {/* Subtle radial glow on hover */}
               <div className="absolute inset-0 bg-radial from-gold/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

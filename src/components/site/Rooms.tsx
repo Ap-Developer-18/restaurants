@@ -73,7 +73,7 @@ export function Rooms() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-10">
+        <div className="grid md:grid-cols-3 gap-6">
           {rooms.map((r, i) => (
             <motion.article
               key={r.name}
@@ -85,7 +85,7 @@ export function Rooms() {
                 delay: i * 0.15,
                 ease: [0.2, 1, 0.3, 1],
               }}
-              className="group glass-card rounded-lg lg:rounded-[2.5rem] overflow-hidden border border-white/5 hover:border-gold/30 transition-all duration-700 flex flex-col"
+              className="group glass-card rounded-lg overflow-hidden border border-white/5 hover:border-gold/30 transition-all duration-700 flex flex-col"
             >
               {/* Image Container with Floating Badge */}
               <div className="relative h-80 overflow-hidden">

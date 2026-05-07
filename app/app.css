@@ -49,8 +49,8 @@
   --radius: 0.75rem;
 
   /* Brand Palette - Dark Focus */
-  --gold: oklch(91.77% 0.2382 127.497);
-  --gold-soft: oklch(88.035% 0.27649 138.834);
+  --gold: #b7ff00;
+  --gold-soft: #62ff00;
   --cream: oklch(98% 0.01 95);
   --cocoa: oklch(100% 0.00011 271.152);
   /* Deep charcoal/green */
