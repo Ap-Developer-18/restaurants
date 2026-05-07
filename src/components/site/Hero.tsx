@@ -60,7 +60,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1, ease: [0.2, 1, 0.3, 1] }}
-            className="font-display text-cream text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter"
+            className="font-serif text-cream text-5xl sm:text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter"
           >
             Where Grandeur{" "}
             <span className="sm:hidden text-gold"> Meets Grace </span>

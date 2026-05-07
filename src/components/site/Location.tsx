@@ -22,8 +22,8 @@ export function Location() {
             <p className="text-gold uppercase text-[10px] sm:text-xs tracking-[0.5em] font-medium mb-6">
               Connect With Us
             </p>
-            <h2 className="font-display text-4xl md:text-6xl text-cream leading-tight">
-              Find Your Way to <br />
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-6x text-cream leading-tight">
+              Find Your Way to <br className="max-sm:hidden" />
               <span className="italic text-gold-soft">Tulips Resort</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed max-w-md text-sm md:text-base">
@@ -120,7 +120,7 @@ function ContactCard({
       <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-1">
         {title}
       </div>
-      <div className="text-cream font-display text-sm group-hover:text-gold transition-colors">
+      <div className="text-cream font-serif text-sm group-hover:text-gold transition-colors">
         {body}
       </div>
     </a>

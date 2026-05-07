@@ -108,8 +108,8 @@ export function About() {
               </p>
             </div>
 
-            <h2 className="font-display text-4xl md:text-6xl text-cream leading-tight mb-8">
-              A sanctuary of <br />
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-6x text-cream leading-tight mb-8">
+              A sanctuary of <br className="max-sm:hidden" />
               <span className="italic text-gold-soft drop-shadow-sm">
                 refined legacy
               </span>
@@ -140,10 +140,10 @@ export function About() {
                   className="relative group"
                 >
                   <div className="flex items-baseline gap-1">
-                    <span className="font-display text-3xl md:text-5xl text-gold-soft leading-none">
+                    <span className="font-serif text-3xl md:text-5xl text-gold-soft leading-none">
                       <Counter to={s.value} suffix="" />
                     </span>
-                    <span className="text-gold text-lg md:text-2xl font-display">
+                    <span className="text-gold text-lg md:text-2xl font-serif">
                       {s.suffix}
                     </span>
                   </div>

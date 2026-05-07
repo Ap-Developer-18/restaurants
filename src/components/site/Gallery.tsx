@@ -233,7 +233,7 @@ export function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-4xl md:text-6xl text-stone-100 leading-tight"
+            className="font-serif text-3xl sm:text-4xl md:text-6x text-stone-100 leading-tight"
           >
             Moments of{" "}
             <em className="not-italic text-gold-soft">Timeless Beauty</em>

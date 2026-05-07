@@ -37,7 +37,7 @@ export function Navbar() {
       >
         <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2 group">
-            <span className="text-cream font-display text-xl tracking-wide">
+            <span className="text-cream font-serif text-xl tracking-wide">
               Tulips <span className="text-gradient-gold">Resort</span>
             </span>
           </a>

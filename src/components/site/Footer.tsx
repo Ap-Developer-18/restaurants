@@ -3,10 +3,6 @@ import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { MapPin, Phone, Mail, ArrowUp } from "lucide-react";
 
 export function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="bg-background text-cream pt-24 pb-12 px-6 relative overflow-hidden border-t border-gold/10">
       {/* Decorative background glow */}
@@ -15,7 +11,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         {/* Brand Section */}
         <div className="space-y-6">
-          <div className="font-display text-2xl tracking-tight">
+          <div className="font-serif text-2xl tracking-tight">
             Tulips <span className="italic text-gold-soft">Resort</span>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
@@ -41,7 +37,7 @@ export function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-display text-sm uppercase tracking-[0.3em] text-gold mb-8">
+          <h4 className="font-serif text-sm uppercase tracking-[0.3em] text-gold mb-8">
             Navigation
           </h4>
           <ul className="grid grid-cols-2 md:grid-cols-1 gap-y-4 text-sm text-muted-foreground">
@@ -70,7 +66,7 @@ export function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-display text-sm uppercase tracking-[0.3em] text-gold mb-8">
+          <h4 className="font-serif text-sm uppercase tracking-[0.3em] text-gold mb-8">
             Reservations
           </h4>
           <ul className="space-y-6 text-sm">
@@ -104,7 +100,7 @@ export function Footer() {
         {/* Newsletter/Back to Top */}
         <div className="flex flex-col justify-between items-start lg:items-end">
           <div className="w-full">
-            <h4 className="font-display text-sm uppercase tracking-[0.3em] text-gold mb-3 lg:mb-8 lg:text-right">
+            <h4 className="font-serif text-sm uppercase tracking-[0.3em] text-gold mb-3 lg:mb-8 lg:text-right">
               Newsletter
             </h4>
             <div className="relative">

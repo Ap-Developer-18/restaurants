@@ -51,7 +51,7 @@ export function Rooms() {
     >
       {/* Decorative background text or element */}
       <div className="absolute top-1/4 -right-20 pointer-events-none opacity-[0.02] select-none">
-        <h2 className="text-[20rem] font-display text-gold leading-none">
+        <h2 className="text-[20rem] font-serif text-gold leading-none">
           SUITES
         </h2>
       </div>
@@ -61,12 +61,12 @@ export function Rooms() {
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-gold uppercase text-[10px] sm:text-xs tracking-[0.5em] font-medium mb-6"
+            className="text-gold uppercase text-[10px] sm:text-xs tracking-[0.5em] font-medium mb-2"
           >
             Stay with Us
           </motion.p>
-          <h2 className="font-display text-4xl md:text-6xl text-cream leading-tight">
-            Rooms Designed for <br />
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6x text-cream leading-tight">
+            Rooms Designed for <br className="max-sm:hidden" />
             <span className="italic text-gold-soft drop-shadow-sm">
               Quiet Luxury
             </span>
@@ -114,7 +114,7 @@ export function Rooms() {
 
               {/* Content Section */}
               <div className="p-4 md:p-6 lg:p-8 flex-1 flex flex-col">
-                <h3 className="font-display text-2xl md:text-3xl text-cream mb-4 group-hover:text-gold-soft transition-colors">
+                <h3 className="font-serif text-2xl md:text-3xl text-cream mb-4 group-hover:text-gold-soft transition-colors">
                   {r.name}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">

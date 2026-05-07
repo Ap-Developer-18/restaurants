@@ -83,9 +83,9 @@ export function Weddings() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl md:text-6xl text-cream leading-tight"
+            className="font-serif text-3xl sm:text-4xl md:text-6x text-cream leading-tight"
           >
-            Where Every Celebration <br />
+            Where Every Celebration <br className="max-sm:hidden" />
             <span className="italic text-gold-soft drop-shadow-sm">
               Becomes a Legacy
             </span>
@@ -111,7 +111,7 @@ export function Weddings() {
                   <e.icon className="h-6 w-6" />
                 </div>
 
-                <h3 className="font-display text-xl text-cream mb-3 group-hover:text-gold transition-colors">
+                <h3 className="font-serif text-xl text-cream mb-3 group-hover:text-gold transition-colors">
                   {e.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">

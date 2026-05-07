@@ -75,7 +75,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl md:text-6xl text-cream leading-tight"
+            className="font-serif text-3xl sm:text-4xl md:text-6x text-cream leading-tight"
           >
             Trusted by <span className="italic text-gold-soft">Thousands</span>
           </motion.h2>
@@ -105,7 +105,7 @@ export function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="font-display text-xl sm:text-2xl md:text-4xl text-cream leading-[1.45] italic mb-10 px-4 md:px-20">
+                <blockquote className="font-serif text-xl sm:text-2xl md:text-4xl text-cream leading-[1.45] italic mb-10 px-4 md:px-20">
                   &ldquo;{reviews[index].text}&rdquo;
                 </blockquote>
 
@@ -120,7 +120,7 @@ export function Testimonials() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-gold-soft font-display text-xl tracking-wide">
+                    <h4 className="text-gold-soft font-serif text-xl tracking-wide">
                       {reviews[index].name}
                     </h4>
                     <p className="text-muted-foreground text-[10px] uppercase tracking-[0.2em] mt-1">

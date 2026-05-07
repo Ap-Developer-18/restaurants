@@ -39,9 +39,9 @@ export function Facilities() {
           >
             World Class Facilities
           </motion.p>
-          <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight">
+          <h2 className="font-serif text-4xl md:text-5xl text-cream leading-tight">
             Thoughtful <span className="italic text-gold-soft">Amenities</span>,{" "}
-            <br />
+            <br className="max-sm:hidden" />
             Effortless Luxury
           </h2>
         </div>
@@ -68,7 +68,7 @@ export function Facilities() {
                   </div>
                 </div>
 
-                <div className="font-display sm:text-lg text-cream mb-1">
+                <div className="font-serif sm:text-lg text-cream mb-1">
                   {f.label}
                 </div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground group-hover:text-gold/80 transition-colors">
