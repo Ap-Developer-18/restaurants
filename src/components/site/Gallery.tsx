@@ -52,9 +52,12 @@ export function Gallery() {
   }, [open]);
 
   return (
-    <section id="gallery" className="py-24 md:py-32 px-6 bg-background">
+    <section
+      id="gallery"
+      className="pb-24 md:pb-32 px-6 min-h-screen bg-background"
+    >
       <div className="mx-auto max-w-7xl">
-        <div className="text-center max-w-2xl mx-auto mb-6 lg:mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -69,7 +72,7 @@ export function Gallery() {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
+        <div className="flex flex-wrap justify-center gap-3 mb-6 lg:mb-16">
           {tabs.map((t) => (
             <button
               key={t}
@@ -103,7 +106,7 @@ export function Gallery() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.4 }}
-                  className={`group relative overflow-hidden rounded-lg lg:rounded-[2rem] cursor-pointer shadow-luxe
+                  className={`group relative overflow-hidden rounded-lg lg:rounded-4xl cursor-pointer shadow-luxe
                     ${(idx === 0 || idx === 4) && filtered.length > 3 ? "lg:row-span-2" : ""} 
                     ${idx === 3 && filtered.length > 3 ? "lg:col-span-2" : ""}
                   `}

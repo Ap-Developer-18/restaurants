@@ -23,12 +23,15 @@ const facilities = [
 
 export function Facilities() {
   return (
-    <section id="facilities" className="py-32 px-6 bg-background relative overflow-hidden">
+    <section
+      id="facilities"
+      className="py-32 px-6 bg-background relative overflow-hidden"
+    >
       {/* Subtle background ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-125 bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="mx-auto max-w-7xl relative z-10">
-        <div className="text-center max-w-2xl mx-auto mb-6 lg:mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -37,7 +40,8 @@ export function Facilities() {
             World Class Facilities
           </motion.p>
           <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight">
-            Thoughtful <span className="italic text-gold-soft">Amenities</span>, <br />
+            Thoughtful <span className="italic text-gold-soft">Amenities</span>,{" "}
+            <br />
             Effortless Luxury
           </h2>
         </div>
@@ -50,7 +54,7 @@ export function Facilities() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="group relative glass-card rounded-3xl p-8 text-center transition-all duration-500 hover:-translate-y-2 overflow-hidden"
+              className="group relative glass-card rounded-lg lg:rounded-3xl p-4 sm:p-8 text-center transition-all duration-500 hover:-translate-y-2 overflow-hidden"
             >
               {/* Hover Glow Effect */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-radial from-gold/10 via-transparent to-transparent" />
@@ -64,7 +68,9 @@ export function Facilities() {
                   </div>
                 </div>
 
-                <div className="font-display text-lg text-cream mb-1">{f.label}</div>
+                <div className="font-display sm:text-lg text-cream mb-1">
+                  {f.label}
+                </div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground group-hover:text-gold/80 transition-colors">
                   {f.sub}
                 </div>

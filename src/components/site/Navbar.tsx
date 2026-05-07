@@ -81,7 +81,7 @@ export function Navbar() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="lg:hidden glass-dark mt-3 mx-6 rounded-2xl p-6 flex flex-col gap-4"
+            className="lg:hidden glass-dark mt-3 bg-black/10 backdrop-blur-2xl mx-6 rounded-lg p-6 flex flex-col gap-4"
           >
             {links.map((l) => (
               <a

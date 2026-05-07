@@ -132,57 +132,21 @@ export function Testimonials() {
                 </div>
               </motion.div>
             </AnimatePresence>
-
-            {/* Desktop Arrows (Hidden on Mobile) */}
-            <div className="hidden md:flex absolute inset-x-0 top-1/2 -translate-y-1/2 justify-between pointer-events-none px-4 lg:-px-16">
-              <button
-                onClick={() => paginate(-1)}
-                className="p-4 rounded-full border border-gold/10 text-gold hover:bg-gold hover:text-background transition-all duration-300 pointer-events-auto backdrop-blur-sm shadow-luxe"
-              >
-                <ChevronLeft className="h-6 w-6" />
-              </button>
-              <button
-                onClick={() => paginate(1)}
-                className="p-4 rounded-full border border-gold/10 text-gold hover:bg-gold hover:text-background transition-all duration-300 pointer-events-auto backdrop-blur-sm shadow-luxe"
-              >
-                <ChevronRight className="h-6 w-6" />
-              </button>
-            </div>
           </div>
 
-          {/* Navigation Controls (Dots + Mobile Arrows) */}
-          <div className="flex items-center gap-6 mt-12">
-            {/* Mobile Prev Arrow */}
-            <button
-              onClick={() => paginate(-1)}
-              className="md:hidden p-3 rounded-full border border-gold/10 text-gold active:scale-90 transition-transform"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-
-            {/* Indicators */}
-            <div className="flex gap-3">
-              {reviews.map((_, k) => (
-                <button
-                  key={k}
-                  onClick={() => {
-                    setDirection(k > index ? 1 : -1);
-                    setIndex(k);
-                  }}
-                  className={`h-1 rounded-full transition-all duration-500 ${
-                    k === index ? "w-10 bg-gold" : "w-3 bg-white/20"
-                  }`}
-                />
-              ))}
-            </div>
-
-            {/* Mobile Next Arrow */}
-            <button
-              onClick={() => paginate(1)}
-              className="md:hidden p-3 rounded-full border border-gold/10 text-gold active:scale-90 transition-transform"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
+          <div className="flex gap-3 mt-6">
+            {reviews.map((_, k) => (
+              <button
+                key={k}
+                onClick={() => {
+                  setDirection(k > index ? 1 : -1);
+                  setIndex(k);
+                }}
+                className={`h-1 rounded-full transition-all duration-500 ${
+                  k === index ? "w-10 bg-gold" : "w-3 bg-white/20"
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>

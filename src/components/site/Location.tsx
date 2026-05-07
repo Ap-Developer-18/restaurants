@@ -31,7 +31,7 @@ export function Location() {
               We invite you to experience hospitality in its finest form.
             </p>
 
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="mt-6 lg:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <ContactCard
                 icon={<MapPin className="h-5 w-5" />}
                 title="Our Address"
@@ -66,16 +66,16 @@ export function Location() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative group"
+            className="relative group h-full"
           >
             {/* The "Frame" effect */}
             <div className="absolute -inset-1 bg-linear-to-tr from-gold/40 via-transparent to-gold/20 rounded-[2.5rem] blur-sm opacity-50 group-hover:opacity-100 transition duration-1000" />
 
-            <div className="relative rounded-lg lg:rounded-[2rem] overflow-hidden shadow-luxe border border-gold/10 h-[400px] md:h-[550px]">
+            <div className="relative h-full rounded-lg lg:rounded-4xl overflow-hidden shadow-luxe border border-gold/10 max-md:h-100">
               <iframe
                 title="Tulips Resort location"
                 src="https://www.google.com/maps?q=Tosham+Road+Hisar+Haryana&output=embed"
-                className="w-full h-full grayscale-[30%] contrast-[1.1] invert-[0.9] hue-rotate-[180deg]"
+                className="w-full h-full grayscale-30 contrast-[1.1] invert-[0.9] hue-rotate-180"
                 loading="lazy"
               />
               <div className="absolute bottom-6 right-6">

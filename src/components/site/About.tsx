@@ -59,14 +59,14 @@ export function About() {
             <div className="absolute -inset-10 bg-gold/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="col-span-7 space-y-4">
-              <div className="h-3/5 overflow-hidden rounded-lg lg:rounded-[2rem] border border-gold/10 group">
+              <div className="h-3/5 overflow-hidden rounded-lg lg:rounded-4xl border border-gold/10 group">
                 <img
                   src={exterior}
                   alt="Resort exterior"
                   className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
               </div>
-              <div className="h-2/5 overflow-hidden rounded-lg lg:rounded-[2rem] border border-gold/10 group">
+              <div className="h-2/5 overflow-hidden rounded-lg lg:rounded-4xl border border-gold/10 group">
                 <img
                   src={pool}
                   alt="Rooftop pool"
@@ -76,14 +76,14 @@ export function About() {
             </div>
 
             <div className="col-span-5 space-y-4 pt-16">
-              <div className="h-2/5 overflow-hidden rounded-lg lg:rounded-[2rem] border border-gold/10 group">
+              <div className="h-2/5 overflow-hidden rounded-lg lg:rounded-4xl border border-gold/10 group">
                 <img
                   src={lobby}
                   alt="Grand lobby"
                   className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
               </div>
-              <div className="h-3/5 overflow-hidden rounded-lg lg:rounded-[2rem] border border-gold/10 group relative">
+              <div className="h-3/5 overflow-hidden rounded-lg lg:rounded-4xl border border-gold/10 group relative">
                 <img
                   src={wedding}
                   alt="Wedding stage"

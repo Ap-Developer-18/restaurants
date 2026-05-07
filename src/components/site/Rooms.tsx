@@ -57,7 +57,7 @@ export function Rooms() {
       </div>
 
       <div className="mx-auto max-w-7xl relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-6">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -113,7 +113,7 @@ export function Rooms() {
               </div>
 
               {/* Content Section */}
-              <div className="p-8 flex-1 flex flex-col">
+              <div className="p-4 md:p-6 lg:p-8 flex-1 flex flex-col">
                 <h3 className="font-display text-2xl md:text-3xl text-cream mb-4 group-hover:text-gold-soft transition-colors">
                   {r.name}
                 </h3>

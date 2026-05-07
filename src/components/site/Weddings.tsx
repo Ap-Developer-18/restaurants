@@ -64,16 +64,15 @@ export function Weddings() {
         <img
           src={wedding}
           alt="Wedding mandap"
-          className="h-[120%] w-full object-cover scale-110"
+          className="h-full w-full object-cover"
         />
-        {/* Gradient overlays to blend with your dark theme */}
-        <div className="absolute inset-0 bg-linear-to-b from-background via-background/40 to-background" />
-        <div className="absolute inset-0 bg-linear-to-r from-background/80 via-transparent to-background/80" />
+        <div className="absolute inset-0 bg-linear-to-b from-background via-background/60 to-background" />
+        <div className="absolute inset-0 bg-linear-to-r from-background/80 via-transparent to-background/60" />
       </motion.div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-6">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
