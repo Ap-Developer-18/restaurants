@@ -15,13 +15,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         {/* Brand Section */}
         <div className="space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-gold to-gold-soft grid place-items-center font-display text-xl font-bold text-background shadow-gold">
-              T
-            </div>
-            <div className="font-display text-2xl tracking-tight">
-              Tulips <span className="italic text-gold-soft">Resort</span>
-            </div>
+          <div className="font-display text-2xl tracking-tight">
+            Tulips <span className="italic text-gold-soft">Resort</span>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
             Hisar's premier hospitality destination. Experience signature
@@ -109,14 +104,14 @@ export function Footer() {
         {/* Newsletter/Back to Top */}
         <div className="flex flex-col justify-between items-start lg:items-end">
           <div className="w-full">
-            <h4 className="font-display text-sm uppercase tracking-[0.3em] text-gold mb-8 lg:text-right">
+            <h4 className="font-display text-sm uppercase tracking-[0.3em] text-gold mb-3 lg:mb-8 lg:text-right">
               Newsletter
             </h4>
             <div className="relative">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="w-full bg-card border border-gold/10 rounded-full px-6 py-3 text-xs focus:outline-hidden focus:border-gold/40 transition-colors"
+                className="w-full bg-card border border-gold/10 rounded-lg lg:rounded-full px-6 py-3 text-xs focus:outline-hidden focus:border-gold/40 transition-colors"
               />
               <button className="absolute right-2 top-1/2 -translate-y-1/2 text-gold text-xs font-bold uppercase tracking-wider p-2">
                 Join
